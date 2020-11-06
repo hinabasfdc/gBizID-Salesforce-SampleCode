@@ -95,9 +95,9 @@ public class SSO_gBizIDLoginHandler implements Auth.RegistrationHandler {
     u.State = data.attributeMap.get('user_prefecture_name');
 
     // (都道府県はコードが渡されてくるので都道府県名とのマッピングテーブルをカスタムメタデータとして作成し使用)
-    String code = data.attributeMap.get('user_prefecture_name');
-    List<StateListJisX0401__mdt> states = [SELECT MasterLabel, Code__c FROM StateListJisX0401__mdt WHERE Code__c =:code];
-    if(states.size() == 1) u.State = states[0].MasterLabel;
+    // String code = data.attributeMap.get('user_prefecture_name');
+    // List<StateListJisX0401__mdt> states = [SELECT MasterLabel, Code__c FROM StateListJisX0401__mdt WHERE Code__c =:code];
+    // if(states.size() == 1) u.State = states[0].MasterLabel;
 
     // その他属性データ
     u.TimeZoneSidKey    = TIME_ZONE;
