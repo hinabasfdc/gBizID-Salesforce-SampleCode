@@ -41,7 +41,7 @@ public class SSO_gBizIDLoginHandler implements Auth.RegistrationHandler {
   }
 
 /**
- * @description      : 2 回目以降のログイン時に呼びださsれるメソッド
+ * @description      : 2 回目以降のログイン時に呼びだされるメソッド
  * @param userId     : 紐付けられたユーザレコードの ID
  * @param portalId   : 認証プロバイダのポータルに設定されたポータルの値
  * @param data       : UserInfo で渡されてくる情報
